@@ -53,6 +53,84 @@
   },
   {
     "ContainingType": "WebAPI___Livraria.Controllers.AutorController",
+    "Method": "CriaCriarAutor",
+    "RelativePath": "api/Autor/CriarAutor",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "autorCriacaoDto",
+        "Type": "WebAPI___Livraria.Dto.Autor.AutorCriacaoDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebAPI___Livraria.Models.ResponseModel\u00601[[System.Collections.Generic.List\u00601[[WebAPI___Livraria.Models.AutorModel, WebAPI - Livraria, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebAPI___Livraria.Controllers.AutorController",
+    "Method": "EditarAutor",
+    "RelativePath": "api/Autor/EditarAutor",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "autorEdicaoDto",
+        "Type": "WebAPI___Livraria.Dto.Autor.AutorEdicaoDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebAPI___Livraria.Models.ResponseModel\u00601[[System.Collections.Generic.List\u00601[[WebAPI___Livraria.Models.AutorModel, WebAPI - Livraria, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebAPI___Livraria.Controllers.AutorController",
+    "Method": "ExcluirAutor",
+    "RelativePath": "api/Autor/ExcluirAutor",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idAutor",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebAPI___Livraria.Models.ResponseModel\u00601[[System.Collections.Generic.List\u00601[[WebAPI___Livraria.Models.AutorModel, WebAPI - Livraria, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebAPI___Livraria.Controllers.AutorController",
     "Method": "ListarAutores",
     "RelativePath": "api/Autor/ListarAutores",
     "HttpMethod": "GET",
@@ -62,6 +140,156 @@
     "ReturnTypes": [
       {
         "Type": "WebAPI___Livraria.Models.ResponseModel\u00601[[System.Collections.Generic.List\u00601[[WebAPI___Livraria.Models.AutorModel, WebAPI - Livraria, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebAPI___Livraria.Controllers.LivrosContoller",
+    "Method": "BuscarLivrosPorId",
+    "RelativePath": "api/LivrosContoller/BuscarLivroPorId",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "IdLivro",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebAPI___Livraria.Models.ResponseModel\u00601[[WebAPI___Livraria.Models.LivroModel, WebAPI - Livraria, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebAPI___Livraria.Controllers.LivrosContoller",
+    "Method": "BuscarLivroPorIdAutor",
+    "RelativePath": "api/LivrosContoller/BuscarLivroPorIdAutor",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "IdLivro",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebAPI___Livraria.Models.ResponseModel\u00601[[WebAPI___Livraria.Models.LivroModel, WebAPI - Livraria, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebAPI___Livraria.Controllers.LivrosContoller",
+    "Method": "CriarLivro",
+    "RelativePath": "api/LivrosContoller/CriarLivro",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "livrosCriacaoDto",
+        "Type": "WebAPI___Livraria.Dto.Livros.LivrosCriacaoDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebAPI___Livraria.Models.ResponseModel\u00601[[System.Collections.Generic.List\u00601[[WebAPI___Livraria.Models.LivroModel, WebAPI - Livraria, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebAPI___Livraria.Controllers.LivrosContoller",
+    "Method": "EditarLivro",
+    "RelativePath": "api/LivrosContoller/EditarLivros",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "livroEdicaoDto",
+        "Type": "WebAPI___Livraria.Dto.Livros.LivroEdicaoDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebAPI___Livraria.Models.ResponseModel\u00601[[System.Collections.Generic.List\u00601[[WebAPI___Livraria.Models.LivroModel, WebAPI - Livraria, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebAPI___Livraria.Controllers.LivrosContoller",
+    "Method": "ExcluirLivro",
+    "RelativePath": "api/LivrosContoller/Excluirlivro",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "IdLivro",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebAPI___Livraria.Models.ResponseModel\u00601[[System.Collections.Generic.List\u00601[[WebAPI___Livraria.Models.LivroModel, WebAPI - Livraria, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebAPI___Livraria.Controllers.LivrosContoller",
+    "Method": "ListarLivros",
+    "RelativePath": "api/LivrosContoller/ListarLivros",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "WebAPI___Livraria.Models.ResponseModel\u00601[[System.Collections.Generic.List\u00601[[WebAPI___Livraria.Models.LivroModel, WebAPI - Livraria, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
         "MediaTypes": [
           "text/plain",
           "application/json",

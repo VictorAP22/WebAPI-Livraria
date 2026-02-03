@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using WebAPI___Livraria.Dto.Autor;
 using WebAPI___Livraria.Models;
 using WebAPI___Livraria.Services.Autor;
 
@@ -36,8 +37,31 @@ namespace WebAPI___Livraria.Controllers
             return Ok(livro);
         }
 
+        [HttpPost("CriarAutor")]
+        public async Task<ActionResult<ResponseModel<List<AutorModel>>>> CriaCriarAutor(AutorCriacaoDto autorCriacaoDto)
+        {
+            var autoresnovos = await _autorInterface.CriarAutor(autorCriacaoDto);
+            return Ok(autoresnovos);
+        }
 
-        
+        [HttpPut("EditarAutor")]
+        public async Task<ActionResult<ResponseModel<List<AutorModel>>>> EditarAutor(AutorEdicaoDto autorEdicaoDto)
+        {
+            var edicaoautor = await _autorInterface.EditarAutor(autorEdicaoDto);
+            return Ok(edicaoautor);
+        }
+
+        [HttpDelete("ExcluirAutor")]
+        public async Task<ActionResult<ResponseModel<List<AutorModel>>>> ExcluirAutor(int idAutor)
+        {
+            var Excluirautor = await _autorInterface.ExcluirAutor(idAutor);
+            return Ok(Excluirautor);
+        }
+
+
+
+
+
     }
 
     

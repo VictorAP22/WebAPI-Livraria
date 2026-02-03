@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using WebAPI___Livraria.Data;
+using WebAPI___Livraria.Dto.Autor;
 using WebAPI___Livraria.Models;
 
 namespace WebAPI___Livraria.Services.Autor
@@ -53,6 +54,91 @@ namespace WebAPI___Livraria.Services.Autor
 
                 resposta.Dados = livro.Autor;
                 resposta.Mensagem = "Autor Localizado!";
+                return resposta;
+
+            }
+            catch (Exception ex)
+            {
+                resposta.Mensagem = ex.Message;
+                resposta.Status = false;
+                return resposta;
+            }
+        }
+
+        public async Task<ResponseModel<List<AutorModel>>> CriarAutor(AutorCriacaoDto autorCriacaoDto)
+        {
+            ResponseModel<List<AutorModel>> resposta = new ResponseModel<List<AutorModel>>();
+            try
+            {
+                var autornovo = new AutorModel()
+                {
+                    Nome = autorCriacaoDto.Nome,
+                    Sobrenome = autorCriacaoDto.Sobrenome
+                };
+
+                _context.Add(autornovo);
+                await _context.SaveChangesAsync();
+
+                resposta.Dados = await _context.Autores.ToListAsync();
+                resposta.Mensagem = "Autor Criado com Sucesso!";
+                return resposta;
+
+            }
+            catch (Exception ex)
+            {
+                resposta.Mensagem = ex.Message;
+                resposta.Status = false;
+                return resposta;
+            }
+        }
+
+        public async Task<ResponseModel<List<AutorModel>>> EditarAutor(AutorEdicaoDto autorEdicaoDto)
+        {
+            ResponseModel<List<AutorModel>> resposta = new ResponseModel<List<AutorModel>>();
+            try
+            {
+                var autor = await _context.Autores.FirstOrDefaultAsync(autorBanco => autorBanco.Id == autorEdicaoDto.Id);
+                if (autor == null)
+                {
+                    resposta.Mensagem = "Nenhum Autor Localizado";
+                    return resposta;
+                }
+
+                autor.Nome = autorEdicaoDto.Nome;
+                autor.Sobrenome = autorEdicaoDto.Sobrenome;
+
+                _context.Update(autor);
+                await _context.SaveChangesAsync();
+
+                resposta.Dados = await _context.Autores.ToListAsync();
+                resposta.Mensagem = "Autor Editado com Sucesso!";
+                return resposta;
+
+            }
+            catch (Exception ex)
+            {
+                resposta.Mensagem = ex.Message;
+                resposta.Status = false;
+                return resposta;
+            }
+        }
+
+        public async Task<ResponseModel<List<AutorModel>>> ExcluirAutor(int idAutor)
+        {
+            ResponseModel<List<AutorModel>> resposta = new ResponseModel<List<AutorModel>>();
+            try
+            {
+                var autor = await _context.Autores.FirstOrDefaultAsync(autorBanco => autorBanco.Id == idAutor);
+                if (autor == null)
+                {
+                    resposta.Mensagem = "Nenhum Autor Localizado!";
+                    return resposta;
+                }
+
+                _context.Remove(autor);
+                await _context.SaveChangesAsync();
+                resposta.Dados = await _context.Autores.ToListAsync();
+                resposta.Mensagem = "Autor Removido com Sucesso!";
                 return resposta;
 
             }

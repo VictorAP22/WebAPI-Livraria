@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using WebAPI___Livraria.Data;
 using WebAPI___Livraria.Services.Autor;
 using Swashbuckle.AspNetCore.SwaggerUI;
+using WebAPI___Livraria.Services.Livros;
 
 namespace WebAPI___Livraria
 {
@@ -23,6 +24,7 @@ namespace WebAPI___Livraria
             builder.Services.AddSwaggerGen();
 
             builder.Services.AddScoped<IAutorInterface, AutorService>();
+            builder.Services.AddScoped<ILivrosInterface, LivrosService>();
             builder.Services.AddDbContext<AppDbContext>(options =>
             {
                 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConection"));
