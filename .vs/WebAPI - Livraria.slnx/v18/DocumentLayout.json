@@ -1,0 +1,101 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\PC\\Projetos\\WebAPI - Livraria\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EBA331B2-36B2-EF9D-43D0-B37302D918EF}|WebAPI - Livraria.csproj|d:\\pc\\projetos\\webapi - livraria\\controllers\\autorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBA331B2-36B2-EF9D-43D0-B37302D918EF}|WebAPI - Livraria.csproj|solutionrelative:controllers\\autorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBA331B2-36B2-EF9D-43D0-B37302D918EF}|WebAPI - Livraria.csproj|d:\\pc\\projetos\\webapi - livraria\\services\\autor\\iautorinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBA331B2-36B2-EF9D-43D0-B37302D918EF}|WebAPI - Livraria.csproj|solutionrelative:services\\autor\\iautorinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBA331B2-36B2-EF9D-43D0-B37302D918EF}|WebAPI - Livraria.csproj|d:\\pc\\projetos\\webapi - livraria\\services\\autor\\autorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBA331B2-36B2-EF9D-43D0-B37302D918EF}|WebAPI - Livraria.csproj|solutionrelative:services\\autor\\autorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBA331B2-36B2-EF9D-43D0-B37302D918EF}|WebAPI - Livraria.csproj|d:\\pc\\projetos\\webapi - livraria\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBA331B2-36B2-EF9D-43D0-B37302D918EF}|WebAPI - Livraria.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBA331B2-36B2-EF9D-43D0-B37302D918EF}|WebAPI - Livraria.csproj|d:\\pc\\projetos\\webapi - livraria\\models\\autormodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBA331B2-36B2-EF9D-43D0-B37302D918EF}|WebAPI - Livraria.csproj|solutionrelative:models\\autormodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\PC\\Projetos\\WebAPI - Livraria\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\PC\\Projetos\\WebAPI - Livraria\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T16:20:51.863Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AutorModel.cs",
+              "DocumentMoniker": "D:\\PC\\Projetos\\WebAPI - Livraria\\Models\\AutorModel.cs",
+              "RelativeDocumentMoniker": "Models\\AutorModel.cs",
+              "ToolTip": "D:\\PC\\Projetos\\WebAPI - Livraria\\Models\\AutorModel.cs",
+              "RelativeToolTip": "Models\\AutorModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T16:15:28.405Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AutorController.cs",
+              "DocumentMoniker": "D:\\PC\\Projetos\\WebAPI - Livraria\\Controllers\\AutorController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AutorController.cs",
+              "ToolTip": "D:\\PC\\Projetos\\WebAPI - Livraria\\Controllers\\AutorController.cs",
+              "RelativeToolTip": "Controllers\\AutorController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T15:22:38.171Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IAutorInterface.cs",
+              "DocumentMoniker": "D:\\PC\\Projetos\\WebAPI - Livraria\\Services\\Autor\\IAutorInterface.cs",
+              "RelativeDocumentMoniker": "Services\\Autor\\IAutorInterface.cs",
+              "ToolTip": "D:\\PC\\Projetos\\WebAPI - Livraria\\Services\\Autor\\IAutorInterface.cs",
+              "RelativeToolTip": "Services\\Autor\\IAutorInterface.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-02T20:34:30.519Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AutorService.cs",
+              "DocumentMoniker": "D:\\PC\\Projetos\\WebAPI - Livraria\\Services\\Autor\\AutorService.cs",
+              "RelativeDocumentMoniker": "Services\\Autor\\AutorService.cs",
+              "ToolTip": "D:\\PC\\Projetos\\WebAPI - Livraria\\Services\\Autor\\AutorService.cs",
+              "RelativeToolTip": "Services\\Autor\\AutorService.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAowB8AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-02T20:33:57.177Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
